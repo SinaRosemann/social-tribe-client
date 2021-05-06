@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { useQuery } from "@apollo/react-hooks";
-import { Grid, Transition, TransitionGroup } from "semantic-ui-react";
+import { Grid, Transition, TransitionGroup, Image } from "semantic-ui-react";
 import { AuthContext } from "../context/auth";
+
 
 import PostCard from "../components/PostCard";
 import PostForm from "../components/PostForm";
@@ -21,7 +22,12 @@ function Home() {
   return (
     <Grid columns="three">
       <Grid.Row className="page--title">
-        <h1>Kite Tribe, El Gouna - Our notice board</h1>
+         <Image
+              src="https://kitetribe.org/wp-content/uploads/2017/09/kitetribe-01_low-1.png"
+              size="small"
+              float="center"
+            />
+        <h1>Kite Girls, El Gouna - Our notice board</h1>
       </Grid.Row>
       <Grid.Row>
         {user && (
