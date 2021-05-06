@@ -92,10 +92,10 @@ function SinglePost(props) {
                     labelPosition="right"
                     onClick={() => console.log('Comment on post')}
                   >
-                    <Button basic color="blue">
+                    <Button basic color="orange">
                       <Icon name="comments" />
                     </Button>
-                    <Label basic color="blue" pointing="left">
+                    <Label basic color="orange" pointing="left">
                       {commentCount}
                     </Label>
                   </Button>
