@@ -13,7 +13,7 @@ function MenuBar() {
   const  handleItemClick = (e, { name }) => setActiveItem(name);
 
   const menuAuthBar = user ? (
-    <Menu pointing secondary size="massive" color="teal">
+    <Menu pointing secondary size="massive" color="orange">
           <Menu.Item
             name={user.username}
             active
@@ -28,9 +28,9 @@ function MenuBar() {
           </Menu.Menu>
         </Menu>
   ) : (
-    <Menu pointing secondary size="massive" color="teal">
+    <Menu pointing secondary size="massive" color="orange">
           <Menu.Item
-            name='home'
+            name='NOTICE BOARD'
             active={activeItem === 'home'}
             onClick={handleItemClick}
             as={Link}
