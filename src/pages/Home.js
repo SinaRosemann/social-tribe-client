@@ -39,16 +39,12 @@ function Home() {
           <p>Loading Posts...</p>
         ) : (
           <Transition.Group>
-            <Card.Group>
-
             {posts &&
           posts.map(post => (
             <Grid.Column key={post.id} style={{ marginBottom: 20 }}>
               <PostCard post={post} />
             </Grid.Column>
           ))}
-  </Card.Group>
-
           </Transition.Group>
         )}
       </Grid.Row>
