@@ -21,7 +21,7 @@ function Home() {
   return (
     <Grid columns="three">
       <Grid.Row className="page--title">
-        <h1>Kite Tribe, El Gouna Our notice board</h1>
+        <h1>Kite Tribe, El Gouna - Our notice board</h1>
       </Grid.Row>
       <Grid.Row>
         {user && (
