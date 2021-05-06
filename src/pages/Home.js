@@ -29,7 +29,7 @@ function Home() {
             />
         <h1>Kite Girls, El Gouna - Our notice board</h1>
       </Grid.Row>
-      <Grid.Row>
+      <Grid.Row style={{ justifyContent: "center" }}>
         {user && (
           <Grid.Column>
             <PostForm />
